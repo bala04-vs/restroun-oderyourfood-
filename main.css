@@ -1,0 +1,864 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* main_nav bar */
+
+.main-nav{
+    background-color:rgb(11, 11, 120);
+    padding: 20px;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    gap:150px;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+/* main-section part */
+
+.main-section{
+     display: flex;
+    
+    
+}
+
+.main-img{
+    width:15%;
+}
+
+.main_heading{
+    font-size: 400%;
+    color: orange;
+    font-weight: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* main_section end */
+
+/* main_2 section start */
+.main-2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-2 a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 150%;
+    color:rgb(231, 230, 222);
+    font-weight: 10%;
+}
+
+
+
+.main-menu{
+    color: black;
+    width:10%;
+    visibility: hidden;
+}
+
+
+
+.main-menu>.menubar{
+        width: 100%;
+
+}
+
+
+
+/*  hover part*/
+
+.main-2>a:hover{
+    color: orange;
+}
+
+/* catlog */
+
+.catlog{
+
+    width: 95vw;
+    height: 100vh;
+    
+
+    background-color: rgb(4, 4, 79);
+    /* background-image: url("./img/bg-hero.jpg"); */
+    background-size: cover;
+     display:flex;
+     justify-content: space-around;
+      padding: 10px;
+    position: relative;
+    
+    top:150px;
+    margin-left:20px;
+  
+}
+
+.catlog-matter{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    position: relative;
+    top:150px;
+}
+
+#catlog-heading
+{
+   
+   font-size:300%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: orange;
+
+}
+#catlog_para{
+   width:500px;
+   color: aliceblue;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.catlog-button{
+    box-shadow: 10px 10px rgb(14, 21, 39);
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 50px;
+
+}
+
+   .catlog-button:hover{
+    font-size: 25px;
+      background-color: orange;
+      transform: scale(1.3,1.3);
+      transition: 2s ease-in-out;
+
+   }
+
+
+
+.catlog-image{
+    position: relative;
+    top:100px;
+    width: 550px;
+    animation-name: venkat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes venkat {
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+
+
+
+
+
+
+/* nav-bar media queries */
+
+
+
+/* mobile */
+
+@media screen and (min-width:0px) and (max-width:325px){
+
+    /* nav bar */
+    .main-nav{
+        background-color:rgb(31, 18, 90);
+        padding: 20px;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+       
+       
+        align-items: center;
+        gap:50px;
+        position: fixed;
+    }
+
+
+
+    .main-img{
+        width:20%;
+    }
+
+    .main-section{
+        display: flex;
+        position: relative;
+        right:9px;
+       
+       
+   }
+
+   
+     
+.main_heading{
+    font-size: 200%;
+    color: orange;
+    font-weight: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+    .main-2 {
+        display: flex;
+        width: 300%;
+        height:45vh;
+       
+        
+        border-radius:10px ;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        visibility: hidden;
+        background-color: rgba(10, 19, 96, 0.982);
+
+        position: relative;
+        top: 170px;
+        right:120px;
+    }
+ 
+     
+    .main-menu{
+     
+       
+
+        width:80%;
+        height:50%;
+        visibility:visible;
+        position: relative;
+     
+       
+      
+        
+    }
+
+   
+
+
+  
+  .main-menu:hover~.main-2{
+   
+    visibility: visible;
+    
+ 
+   
+  }
+
+
+  .main-menu>.menubar{
+    width:800%;
+    border:2px solid gray;
+    background-color:rgba(32, 76, 209, 0.636) ;
+    border-radius:5px;
+    position: relative;
+    left:30px;
+}
+
+
+/* catlog mobile */
+  
+.catlog{
+
+    width: 95vw;
+    height: 100vh;
+     display:flex;
+     flex-direction: column;
+    align-items: center;
+    gap:40px;
+      padding: 10px;
+    position: relative;
+    
+    top:100px;
+    right: 25px;
+   
+  
+}
+
+
+.catlog-matter{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+    top:10px;
+}
+
+#catlog-heading
+{
+   
+   font-size:230%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: orange;
+   position: relative;
+   top:80px;
+}
+
+#catlog_para{
+    width:250px;
+    font-size: 12px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    visibility: hidden;
+ }
+ 
+ .catlog-button{
+    box-shadow: 10px 10px rgb(14, 21, 39);
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 30px;
+
+}
+
+.catlog-image{
+    position: relative;
+    top:10px;
+    width: 250px;
+    animation-name: venkat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+  
+
+}
+
+/* nav-bar end */
+
+
+
+
+/* l-mobile devices */
+
+
+
+@media screen and (min-width:325px) and (max-width:475px){
+    .main-nav{
+        background-color:rgb(31, 18, 90);
+        padding: 20px;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+       
+       
+        align-items: center;
+        gap:50px;
+        position: fixed;
+        
+    }
+
+
+
+    .main-img{
+        width:20%;
+    }
+
+    .main-section{
+        display: flex;
+        position: relative;
+        right:9px;
+       
+       
+   }
+
+   
+     
+.main_heading{
+    font-size: 200%;
+    color: orange;
+    font-weight: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+    .main-2 {
+        display: flex;
+        width: 800%;
+        height:50vh;
+       
+        
+        border-radius:10px ;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        visibility: hidden;
+        background-color: rgba(10, 19, 96, 0.668);
+
+        position: relative;
+        top: 170px;
+        right:100px;
+    }
+ 
+     
+    .main-menu{
+     
+       
+
+        width:20%;
+        height:50%;
+        visibility:visible;
+       
+      
+        
+    }
+
+   
+
+
+  
+  .main-menu:hover~.main-2{
+   
+    visibility: visible;
+    
+ 
+   
+  }
+
+
+  .main-menu>.menubar{
+    width:800%;
+    border:2px solid gray;
+    background-color:rgba(32, 76, 209, 0.636) ;
+    border-radius:5px;
+    position: relative;
+    left:150px;
+}
+
+ /* catlog */
+ 
+
+ .catlog{
+
+    width: 95vw;
+    height: 100vh;
+     display:flex;
+     flex-direction: column;
+    align-items: center;
+    gap:40px;
+      padding: 10px;
+    position: relative;
+    
+    top:100px;
+  
+   
+  
+}
+
+
+.catlog-matter{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+    top:10px;
+}
+
+#catlog-heading
+{
+   
+   font-size:230%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: orange;
+   position: relative;
+   top:80px;
+}
+
+#catlog_para{
+    width:250px;
+    font-size: 12px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    visibility: hidden;
+ }
+ 
+ .catlog-button{
+    box-shadow: 10px 10px rgb(14, 21, 39);
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 30px;
+
+}
+
+.catlog-image{
+    position: relative;
+    top:10px;
+    width: 300px;
+    animation-name: venkat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* tablet  */
+@media screen and (min-width:490px) and (max-width:768px){
+    .main-nav{
+        background-color:rgb(31, 18, 90);
+        padding: 20px;
+        width: 100vw;
+        height:10vh;
+        display: flex;
+       
+       
+        align-items: center;
+        gap:50px;
+        position: fixed;
+    }
+
+
+
+    .main-img{
+        width:20%;
+    }
+
+    .main-section{
+        display: flex;
+        position: relative;
+        right:9px;
+       
+       
+   }
+
+   
+     
+.main_heading{
+    font-size: 300%;
+    color: orange;
+    font-weight: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+    .main-2 {
+        display: flex;
+        width: 250%;
+        height:50vh;
+       
+        
+        border-radius:10px ;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        visibility: hidden;
+        background-color: rgba(10, 19, 96, 0.668);
+
+        position: relative;
+        top: 170px;
+        right:100px;
+    }
+ 
+     
+    .main-menu{
+     
+       
+
+        width:80%;
+        height:50%;
+        visibility:visible;
+       
+      
+        
+    }
+
+   
+
+
+  
+  .main-menu:hover~.main-2{
+   
+    visibility: visible;
+    
+ 
+   
+  }
+
+
+  .main-menu>.menubar{
+    width:40%;
+    border:2px solid gray;
+    background-color:rgba(32, 76, 209, 0.636) ;
+    border-radius:5px;
+    position: relative;
+    left:390px;
+    top:-5px
+}
+
+
+
+
+/* catlog start */
+
+
+
+.catlog{
+
+    width: 90vw;
+    height: 100vh;
+     display:flex;
+     flex-direction: column;
+    align-items: center;
+    gap:40px;
+      padding: 10px;
+    position: relative;
+    
+    top:100px;
+   
+  
+}
+
+
+.catlog-matter{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+    top:10px;
+}
+
+#catlog-heading
+{
+   
+   font-size:230%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: orange;
+   position: relative;
+   top:40px;
+}
+
+#catlog_para{
+    width:250px;
+    font-size: 12px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    visibility: hidden;
+ }
+ 
+ .catlog-button{
+    box-shadow: 10px 10px rgb(14, 21, 39);
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 30px;
+    top:-50px;
+
+}
+
+.catlog-image{
+    position: relative;
+    top:-50px;
+    width: 320px;
+    animation-name: venkat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+}
+
+/* lap-top */
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    .main-nav{
+        background-color:rgb(10, 57, 113);
+        padding: 20px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap:40px;
+        position: fixed;
+    }
+    .main_heading{
+        font-size: 400%;
+        color: orange;
+        font-weight: 50px;
+    }
+
+    
+    .main-img{
+    width:20%;
+    }
+
+    .main-2{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+        right:30px;
+    }
+    
+    .main-2 a{
+        text-decoration: none;
+        list-style: none;
+        font-size: 130%;
+        color:rgb(231, 230, 222);
+        font-weight: 10%;
+    }
+
+    .main-menu>.menubar{
+        width:40%;
+        border:2px solid gray;
+        background-color:rgba(32, 76, 209, 0.636) ;
+        border-radius:5px;
+        position: relative;
+        left:350px;
+        top:-5px
+    }
+
+
+/* catlog */
+
+.catlog{
+
+    width: 90vw;
+    height: 100vh;
+    
+
+    background-color: rgb(4, 4, 79);
+    /* background-image: url("./img/bg-hero.jpg"); */
+    background-size: cover;
+     display:flex;
+     justify-content: space-around;
+     /* align-items: center; */
+      padding: 10px;
+    position: relative;
+    
+    top:150px;
+    margin-left:20px;
+  
+}
+
+.catlog-matter{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    position: relative;
+    left:90px;
+}
+
+#catlog-heading
+{
+   
+   font-size:200%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: orange;
+
+}
+#catlog_para{
+   width:500px;
+   color: aliceblue;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.catlog-button{
+    box-shadow: 10px 10px rgb(14, 21, 39);
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 45px;
+
+}
+
+   .catlog-button:hover{
+    font-size: 25px;
+      background-color: orange;
+      transform: scale(1.3,1.3);
+      transition: 2s ease-in-out;
+
+   }
+
+
+
+.catlog-image{
+    position: relative;
+    /* top:10px; */
+    width: 350px;
+    animation-name: venkat;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* catlog end */
+
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+
+    .main-nav{
+        background-color:rgb(10, 57, 113);
+        padding: 20px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap:150px;
+        position: fixed;
+    }
+    .main_heading{
+        font-size: 300%;
+        color: orange;
+        font-weight: 50px;
+    }
+
+    
+    .main-img{
+    width:15%;
+    }
+
+    .main-2{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+        right:30px;
+    }
+    
+    .main-2 a{
+        text-decoration: none;
+        list-style: none;
+        font-size: 200%;
+        color:rgb(231, 230, 222);
+        font-weight: 10%;
+    }
+}
+
+

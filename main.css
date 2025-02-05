@@ -166,6 +166,10 @@
 
 
 
+
+
+
+
 /* nav-bar media queries */
 
 
@@ -862,3 +866,167 @@
 }
 
 
+/* about the resutrant  */
+
+.about{
+    position: relative;
+    top:200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+   animation: bala 4s 2;
+}
+
+
+.master{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   gap:10px;
+}
+.quality{
+    
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.online-order{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.about-img{
+    width:40%;
+}
+.about-imge{
+    width:55%;
+}
+
+.about-title{
+    color: black;
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+
+}
+.about-matter{
+    font-size: 150%;
+    color: rgb(53, 50, 50);
+    line-height: 30px;
+    padding: 5px;
+    
+
+}
+
+.master:hover{
+    background-color: rgb(12, 41, 111);
+    .about-title{
+        color: aliceblue;
+    }
+    .about-matter{
+        color: aliceblue;
+    }
+}
+
+.quality:hover{
+    background-color: rgb(12, 41, 111);
+    .about-title{
+        color: aliceblue;
+    }
+    .about-matter{
+        color: aliceblue;
+    }
+}
+
+.online-order:hover{
+    background-color: rgb(12, 41, 111);
+    .about-title{
+        color: aliceblue;
+    }
+    .about-matter{
+        color: aliceblue;
+    }
+}
+
+.services:hover{
+    background-color: rgb(12, 41, 111);
+    .about-title{
+        color: aliceblue;
+    }
+    .about-matter{
+        color: aliceblue;
+    }
+}
+
+@keyframes bala{
+    from{
+        top:500px
+    }
+    to{
+        top:200px
+    }
+}
+
+/* media queries */
+@media screen and (min-width:0px) and (max-width:425px){
+    .about{
+        position: relative;
+        top:200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+      
+    }
+
+}
+
+@media screen and (min-width:475px) and (max-width:768px){
+    .about{
+        position: relative;
+        top:200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+      
+    }
+
+    .about-img{
+        width:17%;
+    }
+    .about-imge{
+        width:20%;
+    }
+    
+    .about-title{
+        color: black;
+        font-size: 200%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 10px;
+    
+    }
+    .about-matter{
+        font-size: 150%;
+        color: rgb(53, 50, 50);
+        line-height: 30px;
+        padding: 5px;
+        
+    
+    }
+    
+
+
+}
+
+
+    
